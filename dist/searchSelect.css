@@ -1,9 +1,9 @@
-div.djf-master-searchList input.searchList {
+div.djf-master-searchSelect input.searchSelect {
   display:inline-block;
   width:auto;
   height:32px;
 }
-div.djf-master-searchList ul.searchList {
+div.djf-master-searchSelect ul.searchSelect {
   margin-top:0px;
   display:none;
   position:absolute;
@@ -17,15 +17,15 @@ div.djf-master-searchList ul.searchList {
   max-height:300px;
   overflow:auto;
 }
-div.djf-master-searchList ul.searchList li {
+div.djf-master-searchSelect ul.searchSelect li {
   padding:4px 8px;
   border-bottom:1px solid #ddd;
   cursor:pointer;  
 }
-div.djf-master-searchList ul.searchList li:last-child {
+div.djf-master-searchSelect ul.searchSelect li:last-child {
   border-bottom:none !important;
 }
-div.djf-master-searchList .btn-searchList-clear {
+div.djf-master-searchSelect .btn-searchSelect-clear {
   visibility:hidden;
   display:inline-block;
   height:38px;
@@ -34,7 +34,7 @@ div.djf-master-searchList .btn-searchList-clear {
   vertical-align:top;
   position:relative;
 }
-div.djf-master-searchList .btn-searchList-clear div {
+div.djf-master-searchSelect .btn-searchSelect-clear div {
   margin-top:30%;
   width:100%;
   position:absolute;
@@ -44,6 +44,6 @@ div.djf-master-searchList .btn-searchList-clear div {
   vertical-align:middle;
 }
 
-div.djf-master-searchList .btn-searchList-clear:hover {
+div.djf-master-searchSelect .btn-searchSelect-clear:hover {
   cursor:pointer;
 }

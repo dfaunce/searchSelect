@@ -1,4 +1,10 @@
-div.djf-master-searchSelect ul.searchSelect {
+div.djf-master-searchList input.searchList {
+  display:inline-block;
+  width:auto;
+  height:32px;
+}
+div.djf-master-searchList ul.searchList {
+  margin-top:0px;
   display:none;
   position:absolute;
   min-width:300px;
@@ -11,18 +17,33 @@ div.djf-master-searchSelect ul.searchSelect {
   max-height:300px;
   overflow:auto;
 }
-div.djf-master-searchSelect ul.searchSelect li {
+div.djf-master-searchList ul.searchList li {
   padding:4px 8px;
   border-bottom:1px solid #ddd;
   cursor:pointer;  
 }
-div.djf-master-searchSelect ul.searchSelect li:last-child {
+div.djf-master-searchList ul.searchList li:last-child {
   border-bottom:none !important;
 }
-div.djf-master-searchSelect .input-group .input-group-addon {
- visibility:hidden;
+div.djf-master-searchList .btn-searchList-clear {
+  visibility:hidden;
+  display:inline-block;
+  height:38px;
+  width:30px;
+  text-align:center;
+  vertical-align:top;
+  position:relative;
+}
+div.djf-master-searchList .btn-searchList-clear div {
+  margin-top:30%;
+  width:100%;
+  position:absolute;
+  text-align:center;
+  color:#fff;
+  font-weight:bold;
+  vertical-align:middle;
 }
 
-div.djf-master-searchSelect .input-group .input-group-addon:hover {
+div.djf-master-searchList .btn-searchList-clear:hover {
   cursor:pointer;
 }

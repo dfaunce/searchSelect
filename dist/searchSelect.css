@@ -1,0 +1,28 @@
+div.djf-master-searchSelect ul.searchSelect {
+  display:none;
+  position:absolute;
+  min-width:300px;
+  padding-left:0px;
+  padding-left:0px;
+  list-style-type:none !important;
+  border:1px solid #ddd;
+  background-color:#f4f4f4;
+  z-index:99;
+  max-height:300px;
+  overflow:auto;
+}
+div.djf-master-searchSelect ul.searchSelect li {
+  padding:4px 8px;
+  border-bottom:1px solid #ddd;
+  cursor:pointer;  
+}
+div.djf-master-searchSelect ul.searchSelect li:last-child {
+  border-bottom:none !important;
+}
+div.djf-master-searchSelect .input-group .input-group-addon {
+ visibility:hidden;
+}
+
+div.djf-master-searchSelect .input-group .input-group-addon:hover {
+  cursor:pointer;
+}

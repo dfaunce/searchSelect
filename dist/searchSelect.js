@@ -1,3 +1,13 @@
+/*
+    Title: searchSelect.js
+    Author: David Faunce
+    Description: Converts an <input> HTML element into a searchable textbox - an alternative to a <select>
+    
+    Pre-requisites:
+        - jQuery (v2.2 to 3.0+)
+        - Bootstrap v3.3.X (preferably 3.3.7)
+*/
+
 $(function () {
 
 	//If user clicks outside of the searchSelect element, then hide all lists

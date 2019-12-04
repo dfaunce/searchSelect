@@ -22,7 +22,7 @@ $(function () {
 
 
 	//Primary function to initialize searchSelect
-   $.fn.searchSelect = function(options) {
+   $.fn.searchSelect = function(options) { 
     var $settings = $.extend({
       placeholder: "Search",
       width:"auto",      

@@ -22,7 +22,7 @@ $(function () {
 
 
 	//Primary function to initialize searchSelect
-   $.fn.searchList = function(options) {
+   $.fn.searchSelect = function(options) {
     var $settings = $.extend({
       placeholder: "Search",
       width:"auto",      
@@ -44,21 +44,21 @@ $(function () {
     
     //Set the master div
     var $master = $(this);
-    $master.addClass("djf-master-searchList");
+    $master.addClass("djf-master-searchSelect");
     $master.css("width", $settings.width);
     
     //Find the input
     var $input = $master.find("input");
-    $input.attr("placeholder", $settings.placeholder).addClass("searchList");
+    $input.attr("placeholder", $settings.placeholder).addClass("searchSelect");
        
     //Wrap the input inside an .input-group
-    $input.wrap('<div class="searchList-group"></div>');
+    $input.wrap('<div class="searchSelect-group"></div>');
     
     //Define the .input-group
-    var $inputGroup = $input.parent(".searchList-group");
+    var $inputGroup = $input.parent(".searchSelect-group");
     
     //Append a button
-    $inputGroup.append('<div class="btn-searchList-clear" title="Clear"><div>&#215;</div></div>');
+    $inputGroup.append('<div class="btn-searchSelect-clear" title="Clear"><div>&#215;</div></div>');
    
     
     if ($settings.buttonHover.iconClass == null) {
@@ -66,7 +66,7 @@ $(function () {
     }
     
     //Define remove button
-    var $btn = $inputGroup.find(".btn-searchList-clear");    
+    var $btn = $inputGroup.find(".btn-searchSelect-clear");    
     var $span = $btn.find("div");
     $btn.css({"background-color": $settings.button.backgroundColor, "color":$settings.button.color});
     $btn.on("mouseover", function() { 
@@ -83,7 +83,7 @@ $(function () {
     
     //Define the UL list
     var $ul = $master.find("ul");
-    $ul.addClass("searchList");
+    $ul.addClass("searchSelect");
     
     
     var i = 0, j = 0;
@@ -166,8 +166,8 @@ $(function () {
     }
     
     $(window).on("click.Bst", function(event) {
-      if (!$(event.target).closest(".djf-master-searchList input.searchList").length) {
-        $("ul.searchList").each(function () {
+      if (!$(event.target).closest(".djf-master-searchSelect input.searchSelect").length) {
+        $("ul.searchSelect").each(function () {
           if ($(this).is(":visible")) {
             $(this).hide();
           }
